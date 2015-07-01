@@ -8,7 +8,7 @@ pwd
 git checkout master
 
 # path to the maploom build that will be used
-MAPLOOM_PATH=../../maploom/lastSuccessful/archive
+MAPLOOM_PATH=../MapLoom
 
 # get the new index.html file and use it to make the partial
 sed -n '/body class="maploom-body">/,/body>/p' $MAPLOOM_PATH/bin/index.html > index_body.html
@@ -33,16 +33,16 @@ mv _maploom_map.html maploom/templates/maploom
 # a version number which we can set in setup.py
 VER_DATE=`date +%Y-%m-%d.%H:%M:%S`
 pushd .
-cd ../../maploom/workspace
+cd ../MapLoom
 VER_SHA1=`git log --format="%H" | head -n1 | cut -c 1-10`
 popd
 VER=$VER_DATE.$VER_SHA1
-sed -i "s|^    version=.*|    version='0.0.1@"$VER_DATE.$VER_SHA1"',|" ./setup.py
+sed -i "" "s|^    version=.*|    version='0.0.1@"$VER_DATE.$VER_SHA1"',|" ./setup.py
 
 # if git status doesn't have 'nothing' (to commit) in it, go ahead and commit
 # for this to work you can, 1) cd ~ 2) ssh-keygen -t rsa (Press enter for all values) 3) add pub key to the repo's deploy keys on github. 
-if [[ $(git status) != *nothing* ]]; then
-  git add .
-  git commit -m "jenkins job django-maploom: use latest maploom to build maploom django wrapper."
-  git push origin master
-fi
+#if [[ $(git status) != *nothing* ]]; then
+#  git add .
+#  git commit -m "jenkins job django-maploom: use latest maploom to build maploom django wrapper."
+#  git push origin master
+#fi
