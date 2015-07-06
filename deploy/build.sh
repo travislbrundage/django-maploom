@@ -5,8 +5,6 @@ set -e
 
 pwd
 
-git checkout master
-
 # path to the maploom build that will be used
 MAPLOOM_PATH=../MapLoom
 
