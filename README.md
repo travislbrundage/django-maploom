@@ -9,7 +9,7 @@ Installation
 ------------
 Install the latest stable version from PIP: 
 
-```pip install django-maploom```
+```pip install django-exchange-maploom```
 
 Download django-maploom and install it directly from source:
 
