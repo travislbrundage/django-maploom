@@ -4,10 +4,10 @@ from setuptools import setup, find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
-    name='django-maploom',
-    version='1.5.0',
-    author='Prominent Edge',
-    author_email='geoshape.org@gmail.com',
+    name='django-exchange-maploom',
+    version='1.5.1',
+    author='GeoNode Development Team - Prominent Edge, Terranodo, Boundless Spatial',
+    author_email='geonode-devel@lists.osgeo.org',
     url='https://github.com/ROGUE-JCTD/django-maploom',
     download_url="https://github.com/ROGUE-JCTD/django-maploom",
     description="Use MapLoom in your django projects.",
