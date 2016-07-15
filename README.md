@@ -1,7 +1,9 @@
 django-maploom
 ==============
 
-A Django wrapper for [MapLoom](https://github.com/ROGUE-JCTD/MapLoom).
+This is a fork of GeoSHAPE Maploom to use with Exchange before changes are added upstream to GeoSHAPE.
+
+A Django wrapper for [MapLoom](https://github.com/boundlessgeo/MapLoom).
 
 Installation
 ------------
