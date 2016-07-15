@@ -1,4 +1,4 @@
-django-maploom
+django-exchange-maploom
 ==============
 
 This is a fork of GeoSHAPE Maploom to use with Exchange before changes are added upstream to GeoSHAPE.
