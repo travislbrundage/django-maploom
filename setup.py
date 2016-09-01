@@ -5,11 +5,11 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='django-exchange-maploom',
-    version='1.5.1',
+    version='1.5.9',
     author='GeoNode Development Team - Prominent Edge, Terranodo, Boundless Spatial',
-    author_email='geonode-devel@lists.osgeo.org',
-    url='https://github.com/ROGUE-JCTD/django-maploom',
-    download_url="https://github.com/ROGUE-JCTD/django-maploom",
+    author_email='exchange@boundlessgeo.com',
+    url='https://github.com/boundlessgeo/django-exchange-maploom',
+    download_url="https://github.com/boundlessgeo/django-exchange-maploom",
     description="Use MapLoom in your django projects.",
     long_description=open(os.path.join(here, 'README.md')).read(),
     license='See LICENSE file.',
