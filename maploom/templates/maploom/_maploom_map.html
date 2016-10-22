@@ -18,7 +18,7 @@
           <!--<span ng-class="{'hidden': !notificationsPanel}" class="loom-notification-badge pull-right"></span>-->
         </div>
       </div>
-      <div class="loom-search"></div>
+      <div ng-show="nominatimSearchEnabled" class="loom-search"></div>
       <div id="pulldown-menu" class="panel-group in">
         <div id="pulldown-content">
           <div class="panel" ng-show="notificationsPanel" ng-controller="LoomNotificationController">
@@ -134,7 +134,7 @@
   <div class="loom-timeline"></div>
 </div>
 <!--modal titles are in a lower case underscore separated format so that they can be translated-->
-<div loom-modal id="registry-layer-dialog" modal-title="registry_layers">
+<div loom-modal id="registry-layer-dialog" modal-title="search_layers">
   <div loom-registrylayers id="registry-layers"></div>
 </div>
 <div loom-modal id="add-layer-dialog" modal-title="add_layers">
